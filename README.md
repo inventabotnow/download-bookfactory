@@ -2,9 +2,11 @@
 
 > **Write, illustrate, and self-publish a full children's book in minutes — powered by Google Gemini.**
 
-Book Factory is a free desktop app that turns a single sentence into a finished, KDP-ready picture book: an original story, custom AI illustrations on every page, a cover, and exportable PDF + metadata for Amazon Kindle Direct Publishing.
+Book Factory is a desktop app that turns a single sentence into a finished, KDP-ready picture book: an original story, custom AI illustrations on every page, a cover, and exportable PDF + metadata for Amazon Kindle Direct Publishing.
 
-> **No subscriptions. No watermarks. No artists needed.** You bring an idea — Book Factory writes the story, draws every page, and gives you everything you need to upload to Amazon KDP and start earning royalties.
+> **No watermarks. No artists needed. Sell what you create.** You bring an idea — Book Factory writes the story, draws every page, and gives you everything you need to upload to Amazon KDP and start earning royalties.
+
+> **Membership required.** Book Factory runs on a low-cost membership — grab one at **[bookfactory.lovable.app](https://bookfactory.lovable.app)** or via the activation link the app shows you on first launch.
 
 [![Download for macOS (Apple Silicon)](https://img.shields.io/badge/Download-macOS%20Apple%20Silicon-orange?style=for-the-badge&logo=apple)](../../releases/latest)
 [![Download for macOS (Intel)](https://img.shields.io/badge/Download-macOS%20Intel-blue?style=for-the-badge&logo=apple)](../../releases/latest)
@@ -18,9 +20,9 @@ Book Factory is a free desktop app that turns a single sentence into a finished,
 - **AI that actually understands kids' books.** Built on Google's Gemini models with prompt engineering tuned specifically for early-reader, picture book, and bedtime-story formats — not a generic chatbot bolted onto a stable diffusion model.
 - **Consistent characters across every page.** Your protagonist looks like the same character on page 1 and page 28 — solved.
 - **One-click Amazon KDP export.** Print-ready interior PDF + cover + metadata.json sized to KDP specs. Skip the InDesign rabbit hole.
-- **You own everything.** Stories are saved as plain folders on your computer — no cloud lock-in, no DRM, your books are yours.
-- **Bring your own Gemini key.** Pay Google's pennies-per-book API rate directly. No middleman markup, no monthly subscription.
-- **Native desktop app.** Runs offline-first (once Gemini returns the assets). No "log in to keep working" nonsense.
+- **You own everything you make.** Books are saved as plain folders on your computer — no cloud lock-in, no DRM, your stories and illustrations are yours to sell.
+- **Bring your own Gemini key.** Pay Google's pennies-per-book AI cost directly — no middleman markup on top of generations.
+- **Native desktop app.** Runs locally on your Mac. No browser tabs, no upload-your-work-to-our-server.
 
 ## What you can make
 
@@ -56,21 +58,29 @@ Not sure which one? Click the Apple menu → **About This Mac**. If it says "App
 
 Every release is **signed and notarized by Apple**, so macOS will let you open it without security warnings or right-click workarounds.
 
-## Setup (one time, ~2 minutes)
+## Setup (one time, ~3 minutes)
 
-You'll need a **free** Gemini API key from Google AI Studio — Google gives you a generous free tier that's enough for plenty of books.
+You'll need **two** things to get started:
+
+### 1. A Book Factory membership
+
+Activates the app. Grab one at **[bookfactory.lovable.app](https://bookfactory.lovable.app)** — or just launch Book Factory after install and follow the activation link it shows you. Membership covers unlimited books, ongoing updates, and access to new features as they ship.
+
+### 2. A free Gemini API key from Google AI Studio
+
+Pays for the actual AI generations (cents per book — see FAQ).
 
 1. Open [aistudio.google.com](https://aistudio.google.com) and sign in with a Google account
 2. Click **Get API key** → **Create API key**
 3. Copy the key (starts with `AIza...`)
-4. Paste it into Book Factory on first launch — done
+4. Paste it into Book Factory after activation — done
 
 Your key is stored only on your computer. It's never sent anywhere except directly to Google when generating a book. You can change it anytime in **Settings**.
 
 ## Frequently asked questions
 
-### Is Book Factory free?
-The app is free. You pay Google directly for the AI calls — typically **a few cents per page** at current Gemini pricing. A full 30-page illustrated children's book usually costs **under $1** in API calls.
+### What does Book Factory cost?
+Book Factory runs on a low-cost **membership** — grab one at **[bookfactory.lovable.app](https://bookfactory.lovable.app)** or via the activation link the app shows you on first launch. On top of that, you pay Google directly for the AI generations — typically **a few cents per page** at current Gemini pricing. A full 30-page illustrated children's book usually costs **under $1** in API calls. There is no per-book fee, no royalty share, and no watermark on what you create.
 
 ### Can I sell the books I make on Amazon KDP?
 Yes. The books you generate are yours to publish, sell, and keep 100% of the royalties on. Book Factory exports a print-ready interior PDF and metadata file sized exactly to Amazon KDP specs.
