@@ -8,8 +8,8 @@ Book Factory is a desktop app that turns a single sentence into a finished, KDP-
 
 > **Membership required.** Book Factory runs on a low-cost membership — grab one at **[bookfactory.lovable.app](https://bookfactory.lovable.app)** or via the activation link the app shows you on first launch.
 
-[![Download for macOS (Apple Silicon)](https://img.shields.io/badge/Download-macOS%20Apple%20Silicon-orange?style=for-the-badge&logo=apple)](../../releases/latest)
-[![Download for macOS (Intel)](https://img.shields.io/badge/Download-macOS%20Intel-blue?style=for-the-badge&logo=apple)](../../releases/latest)
+[![Download for macOS](https://img.shields.io/badge/Download-macOS-orange?style=for-the-badge&logo=apple)](../../releases/latest)
+[![Download for Windows](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](../../releases/latest)
 
 [👉 Get the latest release](../../releases/latest)
 
@@ -41,22 +41,23 @@ Book Factory is a desktop app that turns a single sentence into a finished, KDP-
 
 ## Download
 
-The latest release is always at **[releases/latest](../../releases/latest)**. Pick the right file for your Mac:
+The latest release is always at **[releases/latest](../../releases/latest)**.
 
-| Your Mac | Download |
-|---|---|
-| **Apple Silicon** (M1, M2, M3, M4) | `BookFactory-<version>-arm64.dmg` |
-| **Intel** (2015–2020 Macs) | `BookFactory-<version>-x64.dmg` |
+| Platform | Download | Notes |
+|---|---|---|
+| **macOS** | `BookFactory-<version>.dmg` | Universal — one file, runs on both Apple Silicon (M1/M2/M3/M4) and Intel Macs. Signed & notarized by Apple. |
+| **Windows** | `BookFactory-<version>.exe` | Portable — no installer, just double-click to run. |
 
-Not sure which one? Click the Apple menu → **About This Mac**. If it says "Apple M1/M2/M3/M4" pick arm64, otherwise pick x64.
-
-### Install
+### Install — macOS
 
 1. Double-click the downloaded `.dmg`
 2. Drag **Book Factory** into your Applications folder
-3. Launch from Launchpad
+3. Launch from Launchpad — no security warnings, fully notarized
 
-Every release is **signed and notarized by Apple**, so macOS will let you open it without security warnings or right-click workarounds.
+### Install — Windows
+
+1. Double-click the downloaded `.exe`
+2. If Windows SmartScreen warns you, click **More info → Run anyway** (a Windows code-signing cert is on the roadmap)
 
 ## Setup (one time, ~3 minutes)
 
@@ -91,9 +92,6 @@ No. If you can describe a book in one sentence, Book Factory can build it. You c
 ### Do the illustrations look consistent across the book?
 Yes — that's the hardest part of using AI for kids' books, and it's the problem Book Factory was built to solve. Your characters look like the same characters on every page.
 
-### Will there be a Windows version?
-Yes — Windows builds are on the roadmap. ⭐ Star this repo to be notified when it ships.
-
 ### Does it work offline?
 You need internet for the AI generation step (Gemini lives in Google's cloud). Once a book is generated, all editing, previewing, and PDF export work fully offline.
 
@@ -106,7 +104,8 @@ Currently Gemini 3 Flash for story reasoning and Gemini's image generation model
 ## Roadmap
 
 - ✅ macOS app (signed + notarized) — **shipping now**
-- 🔜 Windows app
+- ✅ Windows app — **shipping now** (portable .exe)
+- 🔜 Windows code-signing (eliminates SmartScreen warning)
 - 🔜 Cover designer with AI typography
 - 🔜 Multi-language books (Spanish, French, Mandarin, Arabic)
 - 🔜 Audio narration export for Audible Children's Books
